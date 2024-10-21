@@ -19,4 +19,10 @@ function getValue(number) {
   function answer() {
       input.value = eval(input.value);
     }
+
+  if (!input.value) {
+    input.value = "syntax error";
+  } else {
+    input.value = eval(input.value);
+  }
   
